@@ -1,0 +1,13 @@
+
+.footer {
+    background-color: #00c6ff; /* Dark background to match the navbar */
+    color: #ffffff; /* White text */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000; /* Un valor alto para asegurar que se muestre por encima de otros contenidos */
+    
+    /* position: fixed;  */
+   
+}
+

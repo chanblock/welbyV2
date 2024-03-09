@@ -1,0 +1,25 @@
+.pie-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pie-chart {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto; /* Solo necesario si usas el método 2 */
+}
+
+.chart-card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra tenue en la parte inferior */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+}
+
+.section {
+    padding: 10px;
+}

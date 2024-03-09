@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+
+a {
+    text-decoration: none
+}
+
+
+.chart-card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra tenue en la parte inferior */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    height: 500px;
+}
+
+.chart-card-small{
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra tenue en la parte inferior */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre tarjetas */
+    height: 300px;
+}
+
+.chart-graph-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajusta el espaciado entre los gráficos */
+    gap: 20px; /* Espacio entre los gráficos */
+}
+
+
+
+.chart-graph-item {
+    flex: 0 0 30%; /* Cada gráfico ocupa cerca del 30% del ancho del contenedor */
+    height: 300px; /* Altura fija para cada gráfico */
+}
+
+.card-countTotal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajusta según tus preferencias */
+}
+
+.card-counTotal {
+    width: 250px;
+    height: 100px;
+    margin: 10px; /* Espaciado entre tarjetas */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#8a2ae2,  #5a0be1); /* Degradado de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    text-align: center;
+    /* Otros estilos que desees agregar */
+}
+
+.card-counTotal2 {
+    width: 250px;
+    height: 100px;
+    margin: 10px; /* Espaciado entre tarjetas */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra en la parte inferior */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right,#10b391,  #78c44f); /* Degradado de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #ffffff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    text-align: center;
+    /* Otros estilos que desees agregar */
+}

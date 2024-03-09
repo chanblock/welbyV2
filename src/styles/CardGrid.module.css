@@ -1,0 +1,13 @@
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
+    margin: -10px;
+  }
+  
+  .cardWrapper {
+    padding: 1%;
+  }
+  

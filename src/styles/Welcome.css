@@ -1,0 +1,699 @@
+/* Home.css */
+
+
+
+body {
+  overflow-x: hidden;
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    color: #333;
+    max-width: 100%;
+  }
+  
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    min-height: 300px; /* Ajusta este valor según la altura deseada */
+    padding: 2rem; /* Añade algo de relleno para evitar que el texto y los demás elementos queden demasiado pegados a los bordes */
+  }
+
+  .intro-section  .lead {
+    font-size: 28px;
+    line-height: 1.5; /* Esta es una altura de línea típica, pero puedes ajustarla según tus necesidades */
+      /* Hace la letra más gruesa */
+    color: #070707; 
+  }
+  
+  .intro-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-container .intro-section p {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #534be2;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .intro-section button:hover {
+    background-color: #635bff;
+  }
+  
+  .features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .features-section h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    gap: 2rem;
+  }
+  
+  .feature {
+    flex: 1 1 20rem;
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: justify;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    /* background-color: #e6f2ff, */
+    background-color: #F8F5FA; /* amarillo suave */
+  }
+  
+  .feature h4 {
+    text-align: center;
+  }
+
+  .feature h2 {
+    text-align: center;
+  }
+
+
+
+  .testimonial-section hr {
+    border: 0;
+    height: 1px;
+    background-color: #333; /* Cambia esto según tu esquema de color */
+    margin-bottom: 20px; /* Espacio entre la línea y el título */
+}
+
+.subscription-section {
+  margin-top: 10em; /* Añade margen superior */
+}
+
+  .subscription-section h2,h1 {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+   
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  }
+
+  .card-title1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* Estilo para la sección list report */
+.section-list-report {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+
+}
+
+
+.section-list-report h3{
+  text-align: center;
+
+}
+.section-list-report p{
+  text-align: justify;
+
+}
+
+/* Estilo para la columna de 30% */
+.section-list-report .column-30 {
+  width: 20%;
+  padding: 0 2rem;
+
+  
+}
+
+/* Estilo para la columna de 70% */
+.section-list-report .column-70 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Estilo para las tarjetas */
+.section-list-report .column-70 .card {
+  flex-basis: calc(25% - 20px); /* Restamos 20px para el margen */
+  margin: 0px;
+  background: white; /* fondo blanco */
+  border-radius: 5px; /* bordes suavemente redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* sombra sutil */
+  min-height: 350px;
+}
+
+.section-list-report button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #534be2;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.carousel {
+  margin-left: 80px;  /* Ajusta según tus necesidades */
+  margin-right: 80px; /* Ajusta según tus necesidades */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(61, 61, 61);  /* Esto hará que las flechas sean negras */
+}
+
+.carousel-indicators .active {
+  background-color: black;  /* Reemplaza 'tuColorDeseadoParaActivo' con el color que quieras para el indicador activo */
+}
+.carousel img {
+  height: 600px;  /* Debe coincidir con la altura del contenedor del carrusel */
+  /* Esto asegura que la proporción de la imagen se mantenga */
+  margin: 0 auto;  /* Esto centra la imagen en el carrusel si es más pequeña que el contenedor */
+}
+.carousel-item {
+  display: flex;
+  align-items: center;  /* Centra verticalmente */
+  justify-content: center;  /* Centra horizontalmente */
+}
+
+
+
+.features-grid  .lead {
+  font-size: 32px;
+  line-height: 1.5; /* Esta es una altura de línea típica, pero puedes ajustarla según tus necesidades */
+    /* Hace la letra más gruesa */
+  color: #404040; 
+}
+
+@media (max-width: 768px) {
+
+  /* Estilo para la columna de 30% */
+  .section-list-report .column-30 {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+
+  /* Estilo para las tarjetas */
+  .section-list-report .column-70 .card {
+    flex-basis: 100%;
+    width: 100%;
+
+    margin: 0.5rem 0; /* Añadir un pequeño margen para separar las tarjetas cuando se apilan */
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-section h1 img {
+    max-width: 105%;
+    height: auto;
+    
+  
+}
+.home-container .intro-section p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.features-grid  .lead {
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 1.5; /* Esta es una altura de línea típica, pero puedes ajustarla según tus necesidades */
+    /* Hace la letra más gruesa */
+ } 
+}
+div.home-container section.intro-section button.button {
+    font-size: 1rem;
+    padding: 8px 16px;
+}
+
+
+
+
+/* estilo para boton free trial de welcome.js */
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #0072ff;
+}
+
+.button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.button:before {
+  top: -3px;
+  left: -3px;
+  border-radius: 40px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+}
+
+.button:after {
+  bottom: -3px;
+  right: -3px;
+  border-radius: 40px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+}
+
+.custom-footer {
+  background-color: #0072ff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.leadWithBackground {
+  background-image: url('../../public/childcareWelly.png');
+  background-size: cover;
+  color: white;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1, 0.9);
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  .carousel {
+      width: 95vw; /* Esto hará que el carrusel tenga el ancho del viewport */
+      position: relative;
+      left: 0.5%;
+      right: 1%;
+      margin-left: -30vw;
+      margin-right: -30vw;
+  }
+
+  .carousel-item img {
+    height: 70vw;
+
+  }
+}
+
+
+.link-section {
+  background-color: #f0f2f4; /* Color de fondo dorado */
+  padding: 20px; /* Espaciado interno para dar espacio al contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor de la sección */
+}
+
+.link-section h2 {
+  
+  color: #534be2; /* Color de texto oscuro */
+}
+
+.link-section .lead {
+  
+  color: #171616; /* Color de texto oscuro */
+}
+
+
+.testimonial-section {
+  height: auto; /* Ajusta la altura automáticamente */
+  padding: 10px; /* Espaciado interno para dar espacio al contenido */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor de la sección */
+  width: 100%;
+
+}
+
+
+.card-video {
+  /* background-color: #ffffff; */
+  background-color: #e6f2ff;  /* azul suave */
+  border-radius: 15px;
+  padding: 2rem;
+  width: calc(33% - 20px);  
+  min-height: 500px;  
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.content-description {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 480px; /* Asegúrate de que el contenedor tenga una altura */
+}
+
+.content-description1 {
+  display: block;
+  height: 650px; /* Asegúrate de que el contenedor tenga una altura */
+  margin-bottom: 20px; 
+}
+
+.content-description1 p {
+  font-style: italic; /* Opcional, para un estilo de testimonio */
+  font-size: 1.3em; /* Ajusta el tamaño del texto según sea necesario */
+  padding: 20px; /* Espacio alrededor del texto */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Necesario para posicionar el ícono de comillas */
+  margin-top: 20px; /* Espacio en la parte superior */
+  margin-bottom: 20px;
+}
+
+.content-description1 p::before {
+  content: '“'; /* Comilla de apertura */
+  font-size: 2em; /* Tamaño del ícono de comillas */
+  color: #1c1c1c; /* Color de las comillas, ajusta según tu diseño */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 10px; /* Posición desde la parte superior del párrafo */
+  left: 10px; /* Posición desde el lado izquierdo del párrafo */
+}
+
+.content-video {
+  display: flex;
+  padding-left: 12%;
+}
+
+.video-wrapper {
+  background: rgba(18, 18, 18, 0.5); /* Color negro con mayor transparencia */
+  padding: 10px; /* Ajusta el espaciado para crear un marco alrededor del video */
+  border-radius: 5px; /* Opcional: Añade bordes redondeados si lo deseas */
+}
+
+.video-container {
+  width: 90%; /* O el ancho deseado 80%*/
+  height: 70%; /* Altura automática para mantener la proporción del video 70%*/
+  max-height: 100%; /* Asegúrate de que no sobrepase el alto de la sección */
+  border-radius: 15px; /* Bordes curvos */
+  overflow: hidden; /* Mantiene el efecto de bordes curvos */
+  /* Añade sombra proyectada a la derecha y abajo */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-container video {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 100%; /* Altura automática para mantener la proporción */
+}
+
+.video-container1 {
+  width: 90%; /* O el ancho deseado 80%*/
+  height: 100%; /* Altura automática para mantener la proporción del video 70%*/
+  max-height: 100%; /* Asegúrate de que no sobrepase el alto de la sección */
+  overflow: hidden; /* Mantiene el efecto de bordes curvos */
+  border-radius: 15px; /* Bordes curvos */
+  /* Añade sombra proyectada a la derecha y abajo */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-container1 video {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 100%; /* Altura automática para mantener la proporción */
+  border-radius: 15px; /* Bordes curvos */
+
+}
+
+.content-video1 {
+  height: 100%;
+ 
+}
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .video-container {
+    width: 100%; /* El contenedor ocupa todo el ancho en pantallas pequeñas */
+    height: auto; /* La altura se ajusta automáticamente */
+    /* Ajusta otros estilos si es necesario, por ejemplo, reducir la sombra */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .video-container video {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción */
+  }
+
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .video-container1 {
+    width: 100%; /* El contenedor ocupa todo el ancho en pantallas pequeñas */
+    height: 100%; /* La altura se ajusta automáticamente */
+    /* Ajusta otros estilos si es necesario, por ejemplo, reducir la sombra */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .video-container1 video {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 100%; /* Altura automática para mantener la proporción */
+  }
+
+  .content-description1 {
+    padding: 10px; /* Menos padding para ahorrar espacio */
+    margin-bottom: 10rem;
+  }
+
+}
+.col-video {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+}
+
+.title-testimonial{
+  font-family: 'Roboto', sans-serif; 
+  font-size: 2.8em;
+}
+
+.button-play {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(255, 130, 0) 20%, rgb(255, 38, 0) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+
+.button-play:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193,244,246,0);
+  }
+}
+
+.background-1 {
+  background-image: url('../../public/img-videos/background1.png');
+  background-size: cover;
+  color: white;
+}
+
+.background-2 {
+  background-image: url('../../public/img-videos/background2.png');
+  background-size: cover;
+  color: white;
+}
+
+.background-3 {
+  background-image: url('../../public/img-videos/background3.png');
+  background-size: cover;
+  color: white;
+}
+
+.text-card-video {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1.8em; /* Tamaño de letra */
+  padding-bottom: 5em;
+}
+
+
+
+
+.content-card-video{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  min-height: 300px; /* Ajusta este valor según la altura deseada */
+  padding: 2rem; /* Añade algo de relleno para evitar que el texto y los demás elementos queden demasiado pegados a los bordes */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.7); /* Color negro semitransparente */
+  z-index: 999; /* Menor que el video modal para que esté detrás */
+}
+
+
+.video-modal {
+  position: fixed;
+  left: 35%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: slideUp 0.5s ease forwards;
+}
+
+@media screen and (max-width: 600px) { /* Ajusta este valor según tus necesidades */
+  .video-modal {
+    left: 15%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(0);
+    width: 100%; /* Ocupa todo el ancho */
+    animation: slideUp 0.5s ease forwards;
+  }
+
+  video {
+    width: 70%; /* El video ocupa todo el ancho del modal */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+  }
+}
+
+/* RESPONSIVE CLASS*/
+
+@media screen and (max-width: 600px) {
+  .modal-backdrop {
+    /* Tus ajustes aquí si es necesario */
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.7); /* Color negro semitransparente */
+  z-index: 999; /* Menor que el video modal para que esté detrás */
+  }
+}
+
+/* Media query para pantallas pequeñas (por ejemplo, menos de 768px) */
+@media (max-width: 768px) {
+  .testimonial-section .content-description,
+  .testimonial-section .content-video {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-section .Row {
+    flex-direction: column-reverse;
+  }
+}
+
+/* estilo para boton de grabar */
+
+.button-microphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 40px;
+  width: 114px;
+  border: none;
+  background: #0d0dd3de;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lable-microphone {
+  line-height: 20px;
+  font-size: 17px;
+  color: #1c1a1a;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.button-microphone:hover {
+  background: #1b1b1c;
+}
+
+.button-microphone:hover .svg-icon {
+  animation: scale 1s linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

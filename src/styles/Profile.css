@@ -1,0 +1,96 @@
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    min-height: 100vh; 
+  }
+  
+  .profile-card {
+    background-color: white;
+    border: 1px solid #f8f5fa;
+    border-radius: .9rem;
+    width: 900px;
+    /* min-height: 400px;  */
+    margin: 1rem;
+  }
+
+  .updateprofile-card {
+    background-color: white;
+    border: 1px solid #f8f5fa;
+    border-radius: .9rem;
+    width: 900px;
+    /* min-height: 300px;  */
+    margin: 1rem;
+    padding: 2.0rem;
+  }
+  
+  .profile-card, .updateprofile-card {
+    max-width: 900px;
+    width: 100%; 
+}
+
+  .profile-card img {
+    padding: 1.25rem;
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .profile-card .card-body {
+    padding: 1.25rem;
+  }
+  
+  .profile-card .card-title {
+    margin-bottom: 1.25rem;
+    font-size: 1.8rem;
+  }
+  
+  .profile-card .card-text {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+  }
+  
+  .profile-card .btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    text-decoration: none;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card-body .column-left {
+    flex: 40%;
+  }
+
+  .card-body .column-left .lead{
+    text-align: center;
+  }
+
+  
+  .card-body .column-right {
+    flex: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .profile-card {
+      width: 100%;
+    }
+  
+    .card-body .column-left,
+    .card-body .column-right {
+      flex: 100%;
+    }
+  }

@@ -1,0 +1,159 @@
+.subscription-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+    padding: 4%;
+    box-sizing: border-box;
+  }
+
+.subscription-details-container{
+  flex-direction: row;  
+  gap: 0px;  
+  box-sizing: border-box;
+}
+  
+  .cardContainer, .payment-form-container,.payment-form-container2  {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    @media (min-width: 576px) {
+      max-width: 100rem;
+      margin: 10px;
+    }
+  
+    @media (min-width: 768px) {
+      max-width: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .subscription-page {
+      flex-direction: column;
+    }
+  }
+  
+  .payment-form-container {
+    width: 100%;
+    max-width: 435px;
+    margin: 0 200;
+  }
+  .payment-form-container2 {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 200;
+  }
+  
+  .form-input, .stripe-card-element {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  .subscribe-button {
+    width: 100%;
+    height: 40px;
+    background-color: #635BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #534be2;
+  }
+  
+  .message-box {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .stripe-card-element-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .stripe-card-element-row > .stripe-card-element {
+    width: 45%;
+  }
+  
+  .disclaimer {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .input-fields {
+    width: 100%;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .footer-links a {
+    color: #534be2; /* Cambia a tu color preferido */
+    text-decoration: none;
+    font-size: 14px; /* Ajusta el tamaño de la fuente según prefieras */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #635bff; /* Cambia a tu color preferido para el estado hover */
+  }
+  
+  .subscription-details {
+    width: 90vw; /* 90% del ancho de la ventana del navegador */
+    max-width: 600px; /* No debe ser más ancho de 335.225px */
+    height: auto; /* El alto se ajustará automáticamente al contenido */
+    max-height: 553.4px; /* No debe ser más alto de 553.4px */
+    overflow: auto; /* Si el contenido es demasiado grande para el contenedor, se mostrará una barra de desplazamiento */
+    padding: 1em; /* Espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del contenedor */
+  }
+
+  .subscription-details p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .myTable {
+    border: none;
+  }
+  
+  .myTable tr {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .myTable .headerCell {
+    background-color: blue;
+    color: white;
+    border-right: 1px solid white;
+  }
+  
+  .myTable .headerCell:last-child {
+    border-right: none;
+  }
+  
+  

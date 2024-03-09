@@ -1,0 +1,104 @@
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - var(--navbar-height));
+    padding: 1rem;
+  }
+
+.auth-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--navbar-height));
+  padding: 1rem;
+  
+  margin: auto;
+}
+  
+.auth-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card-2 {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  width: 100%;
+  max-width: 650px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+
+.auth-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* width: 100%; */
+}
+
+.auth-form-MaxWith input {
+   width: 100%;
+} 
+.button-shared {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 12px 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  width: 100%; /* Asegura que ambos botones tengan el mismo ancho */
+}
+
+.auth-submit {
+  background-color: #28a745;
+}
+
+.auth-toggle {
+  background-color: #0077FF;
+} 
+.auth-submit:hover{
+  background-color: #1C7330;
+}
+.auth-toggle:hover {
+  background-color: #0026FF;
+}
+
+:root {
+  --navbar-height: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+.checkbox-container {
+  
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.checkbox-label {
+  margin-left: 10px;
+}
+
+.big-checkbox {
+  width: 15px;
+  height: 15px;
+}
+  
+  
+  

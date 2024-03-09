@@ -1,0 +1,62 @@
+{
+  "name": "welbyv2",
+  "version": "1.0.0",
+  "homepage": "https://welby.com.au",
+  "private": true,
+  "dependencies": {
+    "@amcharts/amcharts4": "^4.10.38",
+    "@amcharts/editor4": "^4.0.3",
+    "@stripe/react-stripe-js": "^2.1.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ag-grid-community": "^30.2.1",
+    "ag-grid-react": "^30.2.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.3",
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.1.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.11.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "react-textarea-autosize": "^8.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r https://github.com/chanblock/welbyV2.git"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }, 
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}

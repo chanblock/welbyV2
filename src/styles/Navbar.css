@@ -1,0 +1,53 @@
+
+.navbar{
+  background-color: #00c6ff;
+  padding: 18px 0;
+  position: fixed; /* Fija el navbar en su posición */
+    top: 0; /* Asegura que el navbar esté en la parte superior */
+    left: 0; /* Alinea el navbar a la izquierda */
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho de la pantalla */
+    z-index: 1000; 
+}
+
+
+@media (min-width: 992px) {
+  .navbar-nav.ml-auto {
+    margin-left: auto !important;
+  }
+  .navbar-nav .dropdown-menu-right {
+    right: 0 !important;
+    left: auto !important;
+  }
+}
+
+.dropdown-menu-custom {
+  max-width: 100vw;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 70vh;
+  right: 0;
+}
+
+.link-cursor {
+  cursor: pointer;
+}
+
+/* For large screens, show the desktop dropdown and hide the mobile links */
+@media (min-width: 992px) {
+  .desktop-dropdown {
+      display: block !important;
+  }
+  .mobile-dropdown-item {
+      display: none !important;
+  }
+}
+
+/* For small screens, hide the desktop dropdown and show the mobile links */
+@media (max-width: 991px) {
+  .desktop-dropdown {
+      display: none !important;
+  }
+  .mobile-dropdown-item {
+      display: block !important;
+  }
+}

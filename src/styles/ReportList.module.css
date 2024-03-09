@@ -1,0 +1,152 @@
+.report-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.report-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+   
+
+   
+}
+
+.report-item h3 {
+    font-size: 1.4rem;
+    color: #222;
+    margin: 0;
+}
+
+.report-item p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.report-item button {
+    cursor: pointer;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.report-item button:hover {
+    background-color: #005fa3;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.checkbox-container {
+    position: absolute; /* Agrega esta línea */
+    top: 1rem; /* Ajusta esto según sea necesario */
+    right: 1rem; /* Ajusta esto según sea necesario */
+}
+
+.report-text {
+    max-height: 350px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* Personalizar el estilo del scrollbar */
+.report-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.report-text::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.report-text::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.report-text::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.report-text {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media (max-width: 576px) {
+    .btn-container button {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+
+  @media (max-width: 767px) {
+    .search-bar {
+      
+      
+      width: 90%;
+      height: auto;
+      margin-left: 30px;
+    }
+
+   
+  }
+  
+  .search-input {
+    width: 500px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+  }
+  
+  .fullscreen-minheight-div {
+    min-height: 50vh;  /* Asegurar que el div tenga al menos el alto de la ventana del navegador */
+    width: 100%;        /* Ocupar el 100% del ancho del contenedor (esto es opcional) */
+    overflow: auto;     /* Añadir barras de desplazamiento si el contenido es más grande que la pantalla */
+   
+}

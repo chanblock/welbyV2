@@ -1,0 +1,53 @@
+.cardContainerHome {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 200px;
+  margin-bottom: 20px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1); /* Agregar animación */
+}
+
+@media (min-width: 576px) {
+  .cardContainerHome {
+    max-width: 100rem;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cardContainerHome {
+    max-width: calc(100% - 0px);
+  }
+}
+
+.cardContainerHome:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Reduce la sombra */
+  transform: scale(0.99); /* Hace que la tarjeta se "contraiga" un poco al pasar el ratón */
+  cursor: pointer; /* Cambia el cursor a un puntero */
+}
+
+
+.cardContainer {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  box-sizing: border-box;
+  
+  height: auto;
+  min-height: 200px;
+  margin-bottom: 20px;
+  
+
+  @media (min-width: 576px) {
+    max-width: 100rem;
+    margin: 10px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: calc(100% - 0px);
+  }
+}

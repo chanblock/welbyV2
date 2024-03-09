@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #00c6ff;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ensuring that the main container takes up the full viewport height and arranges its children in a column */
+body, html {
+    height: 100%;
+}
+
+#app-root {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Making sure that the main content stretches to fill available space */
+.main-content {
+    flex: 1;
+}
+
+body, html, #root, .App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurando que el contenido principal se estire para llenar el espacio disponible */
+.App-content {
+    flex: 1;
+}

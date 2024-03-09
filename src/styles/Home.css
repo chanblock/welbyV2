@@ -1,0 +1,226 @@
+html, body, #root {
+    height: 100%;
+} 
+
+body {
+  padding-top: 70px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+
+.home-container {
+  max-width: 100vw;
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+  .home-container  {
+      width: 100%; /* Hacer que las tarjetas ocupen el ancho completo en móviles */
+      padding: 10px; /* Ajustar el padding si es necesario */
+  }
+}
+.main-view {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .home-content{
+    flex: 1;
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .button-container-submenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    width: 100%;
+    gap: 50px;
+   
+  }
+  
+  .main-view-btn {
+    width: 200px;
+    height: 100px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .main-view-btn-primary {
+    background-color: #007bff; 
+    border-color: #007bff;
+  }
+
+  .main-view-btn-customII {
+    background-color: #FF6D19;
+    border-color: #FF6D19;
+  }
+
+  .main-view-btn-customIII {
+    background-color: #923DCC;
+    border-color: #923DCC;
+  }
+  
+  .main-view-btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .main-view-btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .main-view-btn-info {
+    background-color: #14BAFF;
+    border-color: #14BAFF;
+  }
+
+  .main-view-btn-custom {
+    background-color: #6438A6;
+    border-color: #6438A6;
+  }
+  .report-card{
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 100% !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .report-title {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+
+  .container .card {
+    width: 100%;
+    flex-grow: 0;      /* Evita que el elemento crezca más allá de su altura de contenido */
+    flex-shrink: 1;    /* Permite que el elemento se encoja si es necesario */
+    flex-basis: auto;  /* Establece la base a su altura de contenido */
+  }
+  
+
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Esto separará los botones, ocupando todo el espacio disponible entre ellos. */
+}
+
+  
+  textarea.report-content {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: justify;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .card-container {
+    position: relative;
+  }
+  .copy-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .link-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  @media (max-width: 767.98px) {
+    .copy-button {
+      position: unset;
+      float: right;
+    }
+  }
+  
+  .form-child {
+    background-color: #f6f7f8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group-custom {
+    margin-bottom: 10px;
+}
+
+.button-space {
+  margin-right: 5px;
+}
+ 
+.delete-report-button {
+  background-color: #ff0000; /* Color de fondo rojo */
+  color: #ffffff;            /* Color de texto blanco */
+  border: none;              /* Sin bordes */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Esto separará los botones, ocupando todo el espacio disponible entre ellos. */
+}
+
+.childListContainer {
+  min-height: 500px;
+
+}
+
+
+.fullscreen-minheight-div {
+  min-height: 80vh;  /* Asegurar que el div tenga al menos el alto de la ventana del navegador */
+  width: 100%;        /* Ocupar el 100% del ancho del contenedor (esto es opcional) */
+  overflow: auto;     /* Añadir barras de desplazamiento si el contenido es más grande que la pantalla */
+}
+
+.custom-textarea {
+  height: 190px !important; /* Altura basada en el tamaño que desees */
+  resize: vertical !important;
+}
+
+.custom-textarea-small {
+  height: 100px !important; /* Altura basada en el tamaño que desees */
+  resize: vertical !important;
+}
+.custom-textarea-long {
+  height: 250px !important; /* Altura basada en el tamaño que desees */
+  resize: vertical !important;
+}
+
+.custom-textarea-size {
+  height: 120px !important; /* Altura basada en el tamaño que desees */
+  resize: vertical !important;
+}

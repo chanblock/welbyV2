@@ -1,0 +1,242 @@
+
+/* SubscriptionStyles.css */
+.container-fluid {
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  .row {
+    margin: 0; /* Remove default margin for rows */
+  }
+  
+
+  
+  .subscription-info {
+    background-color: #e6f2ff; /* Light gray background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  
+  .subscription-title{
+    padding: 20px 0; 
+  }
+  .subscription-price {
+    padding: 25px 0; /* Spacing top and bottom */
+
+  }
+  
+  .subscription-price .price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .subscription-title h2,
+  .subscription-price h3 {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .subscription-benefits ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margins */
+
+  }
+  .subscription-benefits  {
+    
+    padding: 10px; /* Remove default padding */
+    margin: 0; /* Remove default margins */
+    background-color: #1FD18D;
+    border-radius: 10px;
+
+  }
+  
+  .subscription-text {
+    padding: 0px; /* Remove default padding */
+    margin: 0; /* Remove default margins */
+  
+  }
+  .subscription-benefits li {
+    padding: 8px 0; /* Spacing top and bottom for each benefit */
+  }
+  
+ 
+  
+  /* Optional: If a benefit is not included, make it lighter */
+  .subscription-benefits li {
+    color: white; /* Lighter text color for all items */
+}
+
+
+.title-page {
+  display: flex;
+  justify-content: space-between;
+  width: 75%; /* Ancho mínimo del contenedor ahora en porcentaje relativo al contenedor padre */
+  padding: 20px;
+  margin: 0 auto; /* Esto centrará el div si su ancho es menor que el de su contenedor */
+}
+
+/* Media queries para ajustar el comportamiento en dispositivos con diferentes anchos */
+@media (max-width: 768px) {
+  .title-page {
+    width: 90%; /* Ancho más amplio para pantallas más pequeñas */
+    flex-direction: column; /* Los elementos se apilarán verticalmente */
+    align-items: center; /* Centrar los elementos cuando están apilados */
+  }
+}
+
+@media (max-width: 576px) {
+  .title-page {
+    width: 100%; /* Utiliza todo el ancho disponible */
+    padding: 10px; /* Reducir el padding en pantallas pequeñas */
+  }
+}
+
+.div-alert{
+  display: block;
+   width: 75%;
+  margin: 0 auto; /* Esto centrará el div si su ancho es menor que el de su contenedor */
+}
+.border-box-tex{
+  /* border: 2px solid #1fd18d; */
+  padding: 5px;
+  color:white;
+  border-radius: 9px;
+  background-color: #007bff;
+}
+/* Estilos adicionales para centrar el div step-container en pantallas grandes */
+
+.step-container {
+  display: flex;
+  min-height: 40vh; /* Se mantiene, pero considera si realmente es necesario basar esto en vh */
+  width: 75%; /* Cambiado de 75vh a porcentaje para ser relativo al ancho del contenedor padre */
+  max-width: 90%; /* Se mantiene, pero asegúrate de que funcione como esperas */
+  flex-direction: column; /* Se mantiene */
+  flex-wrap: wrap; /* Añadido para permitir que los elementos se ajusten en el contenedor */
+  margin: 0 auto; /* Se mantiene para centrar el contenedor */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Se mantiene */
+  border-radius: 5px; /* Se mantiene */
+  
+}
+
+.title-section {
+  /* Estilos para el título y el párrafo */
+  text-align: center; /* Centra el texto si es lo que deseas */
+  padding: 20px;
+  background-color: #f8f9fa; /* Un color de fondo claro para diferenciar la sección */
+  border-bottom: 1px solid #dee2e6; /* Una línea para separar del formulario */
+}
+
+.form-section {
+  /* Estilos para la sección del formulario */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+
+.form-control {
+  height: 38px; /* Altura estándar para inputs */
+  padding: 6px 12px; /* Padding estándar para inputs */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  line-height: 1.5; /* Altura de línea estándar */
+  border: 1px solid #ced4da; /* Bordes para inputs */
+  border-radius: 0.25rem; /* Bordes redondeados para inputs */
+}
+
+.button-section {
+  /* Estilos para la sección del botón */
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
+  padding: 0 20px 20px;
+}
+.button-section button {
+  width: 100%; /* Hace que el botón ocupe el ancho completo de su contenedor */
+  padding: 10px; /* Añade un poco de padding para que sea más grande y fácil de clickear */
+  border-radius: 0.25rem; /* Bordes redondeados para que coincida con los inputs */
+  border: 1px solid #ced4da; /* Borde para que coincida con los inputs si es necesario */
+  background-color: #007bff; /* Color de fondo para el botón primario */
+  color: #fff; /* Color del texto para el botón primario */
+  font-size: 1rem; /* Tamaño de fuente estándar */
+  line-height: 1.5; /* Altura de línea estándar */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima del botón */
+}
+.btn-primary {
+  /* Si deseas personalizar el botón primario */
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.registration-check{
+  padding-left: 20px;
+}
+
+/* estilo card */
+/* Media query para pantallas medianas (tablets) */
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .step-container {
+    width: 100%; /* Permite que el contenedor ocupe todo el ancho disponible */
+    padding: 15px; /* Ajustar el padding para pantallas medianas */
+  }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 576px) {
+  .step-container {
+    padding: 10px; /* Reducir aún más el padding para pantallas pequeñas */
+  }
+}
+
+/* Estilos adicionales para manejar la altura en pantallas pequeñas */
+@media (max-height: 800px) {
+  .step-container {
+    min-height: auto; /* O considera una altura fija en px si necesitas un mínimo */
+    height: auto; /* Permite que el contenedor crezca con el contenido */
+  }
+}
+
+/* Para pantallas pequeñas */
+/* Para pantallas pequeñas */
+@media (max-width: 767px) {
+  .subscription-info {
+    padding: 10px; /* Reduce el padding aún más si es necesario */
+    margin-bottom: 50px; /* Asegúrate de que hay espacio suficiente entre el contenido y el footer */
+    max-height: calc(100vh - 120px); /* Altura máxima, ajusta 120px al tamaño de tu navbar y footer */
+    overflow-y: scroll; /* Cambiado de auto a scroll */
+    font-size: 14px; 
+  }
+  .subscription-info::-webkit-scrollbar {
+    display: none; /* Esto ocultará la barra de desplazamiento en Webkit browsers */
+  }
+ 
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.form-row .form-group {
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* Media query para ajustar en pantallas pequeñas si es necesario */
+@media (max-width: 576px) {
+  .form-row .form-group {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
