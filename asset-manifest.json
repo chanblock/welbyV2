@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d797a924.css",
+    "main.js": "/static/js/main.6ad0b8f5.js",
+    "pdfmake.js": "/static/js/pdfmake.e9817d36.chunk.js",
+    "canvg.js": "/static/js/canvg.d3ec7018.chunk.js",
+    "xlsx.js": "/static/js/xlsx.d11a62ff.chunk.js",
+    "static/js/453.6b4911af.chunk.js": "/static/js/453.6b4911af.chunk.js",
+    "static/media/testimonio3.mp4": "/static/media/testimonio3.eaaf4c7c3896c0e9a673.mp4",
+    "static/media/testimonio2.mp4": "/static/media/testimonio2.612e8906476ed5f9ecfe.mp4",
+    "static/media/testimonio1.mp4": "/static/media/testimonio1.334077cd8d68780a79c3.mp4",
+    "static/media/background3.png": "/static/media/background3.a899d06324180a5c2d1c.png",
+    "static/media/background2.png": "/static/media/background2.f4ca93f8b813378f682a.png",
+    "static/media/background1.png": "/static/media/background1.ab14a65e51a3eb3e782b.png",
+    "static/media/childcareWelly.png": "/static/media/childcareWelly.1133fe908eba7224b6e8.png",
+    "static/media/background.png": "/static/media/background.41b7d59e79849148836b.png",
+    "index.html": "/index.html",
+    "main.d797a924.css.map": "/static/css/main.d797a924.css.map",
+    "main.6ad0b8f5.js.map": "/static/js/main.6ad0b8f5.js.map",
+    "pdfmake.e9817d36.chunk.js.map": "/static/js/pdfmake.e9817d36.chunk.js.map",
+    "canvg.d3ec7018.chunk.js.map": "/static/js/canvg.d3ec7018.chunk.js.map",
+    "xlsx.d11a62ff.chunk.js.map": "/static/js/xlsx.d11a62ff.chunk.js.map",
+    "453.6b4911af.chunk.js.map": "/static/js/453.6b4911af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d797a924.css",
+    "static/js/main.6ad0b8f5.js"
+  ]
+}
